@@ -23,7 +23,7 @@
 #'
 #' https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/
 
-w=function(df=NULL,view=F){
+wrt=function(df=NULL,view=F){
   if(is.data.frame(df)) {
   name_of_df=substitute(df)
   local_copy=get(as.character(name_of_df),envir = globalenv())
